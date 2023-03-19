@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,600,0,-25" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,1,200" />
+
+    <title>Create account | Auto forum</title>  
+</head> 
+<body>
+    <nav>
+        <div class="logo">
+            <h1><span class="auto">Auto</span> Forum</h1>
+        </div>
+        <button type="button" class="secondary-button">Log in</button>
+    </nav>
+
+    <header>
+    <!-- Breadcrumbs Navigation -->
+
+    <ul class="breadcrumb">
+        <li><a href="index.html">Forum</a></li>
+        <li>Create account</li>
+    </ul>
+    </header>
+   
+    <section class="main-form">
+        
+        <form id="form" action="/">
+            <fieldset>
+                <legend>
+                    <h2>Create your account</h2>
+                </legend>
+
+                <!-- Input 1 -->
+
+                
+                    <div class="input-set">
+                        <label class="input-label" for="input-username">
+                            Username
+                        </label>
+
+                        <div id="input-username-hint" class="hint-message">
+                            Required 150 characters or fewer
+                        </div>
+
+                        <input class="input input--error" id="input-username" name="input-username" type="text" required aria-describedby="input-username-hint input-username-error">
+
+                        <p id="input-username-error" class="error-message">
+                        <span class="visually-hidden"><span class="material-symbols-outlined">
+                            error
+                            </span></span> Wrong username
+                        </p>
+                    </div>
+
+                    <div class="input-set">
+                        <label class="input-label" for="input-password">
+                            Password
+                        </label>
+
+                        <div id="input-password-hint" class="hint-message">
+                            <ul>
+                                <li>At least 8 characters</li>
+                                <li>Can’t be entirely numeric</li>
+                            </ul>
+                        </div>
+
+                        <input class="input input--error" id="input-password" name="input-password" type="password" required aria-describedby="input-password-hint input-password-error">
+
+                        <p id="input-password-error" class="error-message">
+                        <span class="visually-hidden"><span class="material-symbols-outlined">
+                            error
+                            </span></span> Wrong password
+                        </p>
+                    </div>
+
+                    <div class="input-set">
+                        <label class="input-label" for="input-password2">
+                            Password confirmation
+                        </label>
+
+                        <div id="input-password2-hint" class="hint-message">
+                            Enter the same password as before
+                        </div>
+
+                        <input class="input input--error" id="input-password2" name="input-password2" type="password" required aria-describedby="input-password2-hint input-password2-error">
+
+                        <p id="input-password2-error" class="error-message">
+                        <span class="visually-hidden"><span class="material-symbols-outlined">
+                            error
+                            </span></span> Wrong password
+                        </p>
+                    </div>
+                    
+                
+
+
+
+            </fieldset>
+            <button class="button">Create account</button>
+        </form>
+        
+        <img src="/img/Create-account.jpg" alt="">
+
+    </section>
+
+    <footer>
+        <p>All Rights Reserved</p>
+    </footer>
+
+    <script src="main.js"></script>
+</body>
+</html>
